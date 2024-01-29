@@ -6,5 +6,5 @@ module "digitalocean_networking_deneb_oqc" {
 
   identifier   = var.identifier
   region       = var.do_region
-  vpc_ip_range = "10.0.1.0/24"
+  vpc_ip_range = "10.1.1.0/24"
 }
