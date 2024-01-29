@@ -9,7 +9,7 @@ module "digitalocean_compute_deneb_lnq" {
 
   identifier   = "deneb-lnq"
   node_size    = "s-1vcpu-1gb-amd"
-  ssh_keys     = ["zack-mac-studio"]
+  ssh_keys     = ["52:0d:1a:16:5e:64:22:28:1c:ec:3a:72:ce:2f:77:ba"]
   storage_size = 15
   vpc_id       = module.digitalocean_networking_deneb_oqc.vpc_id
   vpc_ip_range = module.digitalocean_networking_deneb_oqc.vpc_ip_range
