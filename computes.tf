@@ -2,7 +2,7 @@
 
 module "digitalocean_compute_deneb_lnq" {
   source  = "upmaru/instellar/digitalocean"
-  version = "0.5.2"
+  version = "0.5.3"
 
   cluster_topology = [
   ]
