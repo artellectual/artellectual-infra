@@ -2,13 +2,16 @@
 
 module "digitalocean_compute_deneb_lnq" {
   source  = "upmaru/instellar/digitalocean"
-  version = "0.5.3"
+  version = "0.5.5"
 
+  bastion_size = "s-1vcpu-512mb-10gb"
   cluster_topology = [
   ]
 
   identifier   = "deneb-lnq"
   node_size    = "s-1vcpu-1gb-amd"
+  project_id   = module.digitalocean_networking_deneb_oqc.project_id
+  region       = var.do_region
   ssh_keys     = ["52:0d:1a:16:5e:64:22:28:1c:ec:3a:72:ce:2f:77:ba"]
   storage_size = 15
   vpc_id       = module.digitalocean_networking_deneb_oqc.vpc_id
