@@ -12,7 +12,7 @@ module "digitalocean_compute_deneb_lnq" {
   node_size    = "s-1vcpu-1gb-amd"
   project_id   = module.digitalocean_networking_deneb_oqc.project_id
   region       = var.do_region
-  ssh_keys     = ["52:0d:1a:16:5e:64:22:28:1c:ec:3a:72:ce:2f:77:ba", "0d:28:1d:cd:90:64:ae:bb:70:ed:ce:08:a7:ae:26:b8"]
+  ssh_keys     = ["52:0d:1a:16:5e:64:22:28:1c:ec:3a:72:ce:2f:77:ba", "97:64:a5:a2:d3:4e:1c:f3:39:9c:50:f0:93:9e:b7:c7"]
   storage_size = 15
   vpc_id       = module.digitalocean_networking_deneb_oqc.vpc_id
   vpc_ip_range = module.digitalocean_networking_deneb_oqc.vpc_ip_range
