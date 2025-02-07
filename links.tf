@@ -2,7 +2,7 @@
 
 module "instellar_link_deneb_sxb" {
   source  = "upmaru/bootstrap/instellar//modules/storage"
-  version = "0.6.3"
+  version = "0.8.3"
 
   access_key            = var.do_access_key
   bucket                = module.digitalocean_storage_deneb_mcx.name
@@ -14,7 +14,7 @@ module "instellar_link_deneb_sxb" {
 
 module "instellar_link_deneb_gzs" {
   source  = "upmaru/bootstrap/instellar"
-  version = "0.6.3"
+  version = "0.8.3"
 
   bootstrap_node        = module.digitalocean_compute_deneb_lnq.bootstrap_node
   cluster_address       = module.digitalocean_compute_deneb_lnq.cluster_address
