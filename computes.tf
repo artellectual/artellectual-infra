@@ -2,7 +2,7 @@
 
 module "digitalocean_compute_deneb_lnq" {
   source  = "upmaru/instellar/digitalocean"
-  version = "0.5.5"
+  version = "0.6.0"
 
   bastion_size = "s-1vcpu-512mb-10gb"
   cluster_topology = [
